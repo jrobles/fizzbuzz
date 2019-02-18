@@ -11,9 +11,9 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"Linio\\": "src/"}
+        "psr-4": {"App\\": "src/"}
     },
     "autoload-dev": {
-        "psr-4": {"Linio\\": "tests/"}
+        "psr-4": {"App\\": "tests/"}
     }
 }
