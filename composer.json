@@ -1,0 +1,19 @@
+{
+    "name": "carla/liniano",
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Carla Gouveia",
+            "email": "carla.gouveia@agileelement.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Linio\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Linio\\": "tests/"}
+    }
+}
