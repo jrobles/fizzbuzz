@@ -6,9 +6,9 @@ use PHPUnit\Framework\TestCase;
 
 class ChallengeTest extends TestCase
 {
-	public function testIsPrintingCorrectOutput()
-	{
-		$expectedOutput = '
+    public function testIsPrintingCorrectOutput()
+    {
+        $expectedOutput = <<<TXT
 1
 2
 Fizz
@@ -24,10 +24,10 @@ Fizz
 13
 14
 FizzBuzz
-';
+TXT;
 
-		$challenge = new Challenge();
-		
-		$this->assertEquals($expectedOutput, $challenge->output());
-	}
+        $challenge = new Challenge();
+
+        $this->assertEquals($expectedOutput, $challenge->output());
+    }
 }

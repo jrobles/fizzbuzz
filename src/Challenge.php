@@ -2,13 +2,10 @@
 
 namespace App;
 
-
 class Challenge
 {
-
-	public function output()
-	{
-		return null;
-	}
-
+    public function output()
+    {
+        return null;
+    }
 }
