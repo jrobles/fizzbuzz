@@ -36,7 +36,7 @@ class Challenge
 	// New solution that meets the constraints but not in a glamorous fashion :)
 	private function fizzBuzz($i) 
 	{
-	    // Generrally - it's not a great idea to supress warnings but for this challenge I think this will do.
+	    // Generally - it's not a great idea to supress warnings but for this challenge I think this will do.
 	    @$answer = $this->fizzbuzz[$i];
 
 	    if (!isset($answer)) {
