@@ -10,43 +10,40 @@ class Challenge
 
     public function output()
     {
-		// Range tthrough the 100 numbers
-		foreach(range(1,100) as $i) {	
-			//echo $this->fizzbuzz($i);
-			echo $this->fizzbuzz($i);
-			echo "\n";
-		}
+    	// Range tthrough the 100 numbers
+	foreach(range(1,100) as $i) {	
+	    echo $this->fizzbuzz($i);
+	    echo "\n";
+	}
         return null;
     }
 
 	// Working version but does not meet the requirements.
 	private function _fizzBuzz($i) 
 	{
-			// If 3 or 5 output FizzBuzz
-			if ($i % 3 == 0 && $i % 5 == 0) {
-				return "FizzBuzz";
-			} elseif ($i % 3 == 0) {
-				return "Fizz";
-			} elseif ($i % 5 == 0) {
-				return "Buzz";
-			} else {
-				return $i;	
-			}
+	    // If 3 or 5 output FizzBuzz
+	    if ($i % 3 == 0 && $i % 5 == 0) {
+	        return "FizzBuzz";
+	    } elseif ($i % 3 == 0) {
+	        return "Fizz";
+	    } elseif ($i % 5 == 0) {
+	        return "Buzz";
+	    } else {
+	        return $i;	
+	    }
 	}
 
-	// NMew solution that meets the constraints but not in a glamorous fashion :)
+	// New solution that meets the constraints but not in a glamorous fashion :)
 	private function fizzBuzz($i) 
 	{
+	    // Generrally - it's not a great idea to supress warnings but for this challenge I think this will do.
+	    @$answer = $this->fizzbuzz[$i];
 
-		// Generrally - it's not a great idea to supress warnings but for this challenge I think this will do.
-		@$answer = $this->fizzbuzz[$i];
+	    if (!isset($answer)) {
+	        $answer = $i;	
+	    }
 
-		if (!isset($answer)) {
-			$answer = $i;	
-		}
-
-		return $answer;
-
+	    return $answer;
 	}
 
 }
