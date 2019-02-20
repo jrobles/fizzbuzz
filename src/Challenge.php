@@ -29,12 +29,4 @@ class Challenge
 			}
 	}
 
-	private function fizzBuzz($i) 
-	{
-			// If 3 or 5 output FizzBuzz
-			if ($i % 3 == 0 && $i % 5 == 0) {
-				return 'FizzBuzz';
-			}
-	}
-
 }
