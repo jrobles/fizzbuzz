@@ -17,25 +17,10 @@ class Challenge
 	}
         return null;
     }
-
-	// Working version but does not meet the requirements.
-	private function _fizzBuzz($i) 
-	{
-	    // If 3 or 5 output FizzBuzz
-	    if ($i % 3 == 0 && $i % 5 == 0) {
-	        return "FizzBuzz";
-	    } elseif ($i % 3 == 0) {
-	        return "Fizz";
-	    } elseif ($i % 5 == 0) {
-	        return "Buzz";
-	    } else {
-	        return $i;	
-	    }
-	}
-
-	// New solution that meets the constraints but not in a glamorous fashion :)
-	private function fizzBuzz($i) 
-	{
+    
+    // New solution that meets the constraints but not in a glamorous fashion :)
+    private function fizzBuzz($i) 
+    {
 	    // Generally - it's not a great idea to supress warnings but for this challenge I think this will do.
 	    @$answer = $this->fizzbuzz[$i];
 
