@@ -10,7 +10,7 @@ class Challenge
 
     public function output()
     {
-    	// Range tthrough the 100 numbers
+    	// Range through the 100 numbers
 	foreach(range(1,100) as $i) {	
 	    echo $this->fizzbuzz($i);
 	    echo "\n";
